@@ -124,7 +124,8 @@ $(document).ready(function () {
         let regExp = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$/
         
         if(valueUsername.length >= 7 && regex.test(valueEmail) && regExp.test(valuePassword) && valuePasswordCheck == valuePassword){
-              console.log('Succsess')
+             console.log('Username: ',valueUsername +'\nEmail: ',valueEmail +'\nPassword: ',valuePassword +'\nPassword check: ',valuePasswordCheck +'\n'); 
+            console.log('\n')
         }else {
                 if(valueUsername.length < 6 ){
                     $('.username').removeClass('valid');
@@ -173,5 +174,8 @@ $(document).ready(function () {
                     $('.icon-valid-password-check').css('display', 'none');
                 }
         }
+       
+        
+        
     });
 });
