@@ -1,2 +1,2 @@
 # Registration-Form
-submain
+main
