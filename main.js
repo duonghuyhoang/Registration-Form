@@ -1,5 +1,4 @@
 $(document).ready(function () {
-       
     $('.username').click(function (e) { 
         e.preventDefault();
          $('body,html').click(function (e) { 
